@@ -201,7 +201,7 @@ This guide covers the basic functionalities of the blog platform.
 - **created_at**: Timestamp, stores the date and time when the like was created.
 - **updated_at**: Timestamp, stores the date and time when the like was last updated.
 
-This is the database schema my migrations are based on for my project
+This is the database schema my migrations are based on for my project.
 
 ## About Laravel
 
