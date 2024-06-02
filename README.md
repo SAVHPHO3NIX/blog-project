@@ -133,6 +133,73 @@ This guide will walk you through features and functionalities, including user re
 
 This guide covers the basic functionalities of the blog platform.
 
+## Database Schema
+
+### Users Table
+- **id**: Primary key, auto-incrementing integer.
+- **name**: String, the name of the user.
+- **email**: String, unique email address of the user.
+- **email_verified_at**: Timestamp, nullable, stores the date and time when the email was verified.
+- **password**: String, hashed password of the user.
+- **remember_token**: String, nullable, token used for "remember me" functionality.
+- **image**: String, nullable, URL or path to the user's profile image.
+- **bio**: String, nullable, biography of the user.
+- **created_at**: Timestamp, stores the date and time when the user record was created.
+- **updated_at**: Timestamp, stores the date and time when the user record was last updated.
+
+### Password Reset Tokens Table
+- **email**: Primary key, string, email of the user requesting a password reset.
+- **token**: String, token used for password reset.
+- **created_at**: Timestamp, nullable, stores the date and time when the token was created.
+
+### Sessions Table
+- **id**: Primary key, string, unique session identifier.
+- **user_id**: Foreign key, references the `id` field in the `users` table, nullable.
+- **ip_address**: String, nullable, stores the IP address of the user.
+- **user_agent**: Text, nullable, stores the user agent string of the user's browser.
+- **payload**: LongText, stores session data.
+- **last_activity**: Integer, stores the timestamp of the last activity in the session.
+
+### Cache Table
+- **key**: Primary key, string, unique cache key.
+- **value**: MediumText, stores the cache value.
+- **expiration**: Integer, stores the timestamp when the cache expires.
+
+### Cache Locks Table
+- **key**: Primary key, string, unique lock key.
+- **owner**: String, owner of the lock.
+- **expiration**: Integer, stores the timestamp when the lock expires.
+
+### Posts Table
+- **id**: Primary key, auto-incrementing integer.
+- **user_id**: Foreign key, references the `id` field in the `users` table, cascades on delete.
+- **content**: String, content of the post.
+- **created_at**: Timestamp, stores the date and time when the post was created.
+- **updated_at**: Timestamp, stores the date and time when the post was last updated.
+
+### Comments Table
+- **id**: Primary key, auto-incrementing integer.
+- **user_id**: Foreign key, references the `id` field in the `users` table, cascades on delete.
+- **post_id**: Foreign key, references the `id` field in the `posts` table, cascades on delete.
+- **content**: String, content of the comment.
+- **created_at**: Timestamp, stores the date and time when the comment was created.
+- **updated_at**: Timestamp, stores the date and time when the comment was last updated.
+
+### Follower_User Table
+- **user_id**: Foreign key, references the `id` field in the `users` table, cascades on delete.
+- **follower_id**: Foreign key, references the `id` field in the `users` table, cascades on delete.
+- **created_at**: Timestamp, stores the date and time when the follower relationship was created.
+- **updated_at**: Timestamp, stores the date and time when the follower relationship was last updated.
+
+### Post_Like Table
+- **id**: Primary key, auto-incrementing integer.
+- **user_id**: Foreign key, references the `id` field in the `users` table, cascades on delete.
+- **post_id**: Foreign key, references the `id` field in the `posts` table, cascades on delete.
+- **created_at**: Timestamp, stores the date and time when the like was created.
+- **updated_at**: Timestamp, stores the date and time when the like was last updated.
+
+This is the database schema my migrations are based on for my project
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
