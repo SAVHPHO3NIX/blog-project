@@ -29,6 +29,110 @@
 
 ## How to Use the Blog Platform
 
+This guide will walk you through features and functionalities, including user registration, posting, commenting.
+
+## Table of Contents
+
+1. [User Registration and Authentication](#user-registration-and-authentication)
+2. [Dashboard](#dashboard)
+3. [Creating and Managing Posts](#creating-and-managing-posts)
+4. [Comments](#comments)
+5. [Following Users](#following-users)
+6. [Liking Posts](#liking-posts)
+7. [Profile Management](#profile-management)
+
+## User Registration and Authentication
+
+### Registering a New Account
+1. Navigate to the registration page.
+2. Fill in the required fields: `Name`, `Email`, and `Password`.
+3. Confirm your password.
+4. Submit the form to create your account.
+5. Upon successful registration, you will be redirected to the dashboard with a success message.
+
+### Logging In
+1. Navigate to the login page.
+2. Enter your `Email` and `Password`.
+3. Submit the form to log in.
+4. Upon successful login, you will be redirected to the dashboard with a success message.
+
+### Logging Out
+1. Click the logout button to log out of your account.
+2. You will be redirected to the dashboard with a success message.
+
+## Dashboard
+
+### Viewing Posts
+- The dashboard displays all posts in descending order by creation date.
+- Use the search bar to find posts containing specific content.
+
+## Creating and Managing Posts
+
+### Creating a Post
+1. Navigate to the post creation page.
+2. Enter the post content (minimum 3 characters, maximum 240 characters).
+3. Submit the form to create your post.
+4. Upon successful creation, you will be redirected to the dashboard with a success message.
+
+### Editing a Post
+1. Navigate to the specific post you want to edit.
+2. Click the edit button (only available if you are the post's author).
+3. Update the post content.
+4. Submit the form to save changes.
+5. Upon successful update, you will be redirected to the post's page with a success message.
+
+### Deleting a Post
+1. Navigate to the specific post you want to delete.
+2. Click the delete button (only available if you are the post's author).
+3. Confirm the deletion.
+4. Upon successful deletion, you will be redirected to the dashboard with a success message.
+
+## Comments
+
+### Adding a Comment
+1. Navigate to the post you want to comment on.
+2. Enter your comment in the provided field.
+3. Submit the form to add your comment.
+4. Upon successful creation, you will be redirected to the post's page with a success message.
+
+## Following Users
+
+### Following a User
+1. Navigate to the user's profile page.
+2. Click the follow button to follow the user.
+3. Upon successful action, you will see a success message.
+
+### Unfollowing a User
+1. Navigate to the user's profile page.
+2. Click the unfollow button to unfollow the user.
+3. Upon successful action, you will see a success message.
+
+## Liking Posts
+
+### Liking a Post
+1. Navigate to the post you want to like.
+2. Click the like button to like the post.
+3. Upon successful action, you will see a success message.
+
+### Unliking a Post
+1. Navigate to the post you want to unlike.
+2. Click the unlike button to unlike the post.
+3. Upon successful action, you will see a success message.
+
+## Profile Management
+
+### Viewing Your Profile
+1. Navigate to your profile page to view your information and posts.
+
+### Editing Your Profile
+1. Navigate to your profile page.
+2. Click the edit button.
+3. Update your profile information, including name, bio, and profile picture.
+4. Submit the form to save changes.
+5. Upon successful update, you will be redirected to your profile page with a success message.
+
+This guide covers the basic functionalities of the blog platform.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
