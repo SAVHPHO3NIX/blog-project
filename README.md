@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Documentation
+
+## Technologies and Frameworks Used
+- Laravel Framework 11.9.2
+- Laravel Breeze (did not complete)
+- MySQL
+- Blade Template Engine
+- Bootstrap 
+
+## Setup and Installation
+- Clone the repository or download the zip file.
+- Open the project folder in your terminal.
+- Run `composer install` to install all the dependencies.
+- Run `npm install` to install all the dependencies.
+- Run `npm run dev` to compile the assets.
+- Create database on MySQL to match the.env file. (database name is `blog_project_db`)
+- Run `php artisan migrate` to migrate the tables.
+- Run `php artisan serve` to start the server.
+- Open your browser and navigate to `http://127.0.0.1:8000` to see the website.
+
+## How to Use the Blog Platform
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
