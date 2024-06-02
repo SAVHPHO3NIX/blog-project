@@ -9,6 +9,9 @@
 
 ## Documentation
 
+## GitHub Repository link
+- https://github.com/SAVHPHO3NIX/blog-project
+
 ## Technologies and Frameworks Used
 - Laravel Framework 11.9.2
 - Laravel Breeze (did not complete)
